@@ -34,7 +34,7 @@ func AdminSignup(w http.ResponseWriter, r *http.Request) {
 	// Validate required fields
 	if username == "" || email == "" || password == "" || phone == "" {
 		fmt.Printf("username: %v, email: %v, password: %v phone: %v", username, email, password, phone)
-		utils.HandleError(w, http.StatusBadRequest, "make sure u fill all fields")
+		utils.HandleError(w, http.StatusBadRequest, "make sure you fill all fields")
 		return
 	}
 
