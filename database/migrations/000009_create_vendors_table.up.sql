@@ -1,0 +1,5 @@
+CREATE TABLE vendors (
+    vendor_id UUID PRIMARY KEY REFERENCES users(id) ON DELETE CASCADE, 
+    description TEXT NOT NULL,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+);
